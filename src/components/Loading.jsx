@@ -3,7 +3,7 @@ import React from 'react'
 const Loading = () => {
   return (
     <div>
-        <h1>Liading...</h1>
+        <img src="/loading.avif" alt="" />
     </div>
   )
 }
