@@ -25,15 +25,18 @@ function App() {
     {
       inputValue
         ?<>
+          <img src="image.svg" alt="Imagen ilustracion de Rick and Morty pasando por un portal" />
           <h1 className='app__title'>Rick and Morty</h1>
           <form className='app__form' onSubmit={handleSubmit}>
-            <input className='app__input' ref={inputLocation} type="text" />
+            <input className='app__input' ref={inputLocation} type="text" placeholder='Shearch by ID'/>
             <button className='app__btn'>Search</button>
           </form>
           {
             hasError
               ? <h2 className='app__error'>❌ Hey! you must provide an id from 1 to 126 😟</h2>
-              : <MainContent location={location}/>
+              : <MainContent 
+                location={location}
+              />
           }
         </>
         :

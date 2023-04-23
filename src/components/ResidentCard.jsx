@@ -4,7 +4,6 @@ import "./styles/residentCard.css";
 
 const ResidentCard = ({ url }) => {
   const [resident] = useFetch(url);
-  console.log(resident)
 
   return (
     <>

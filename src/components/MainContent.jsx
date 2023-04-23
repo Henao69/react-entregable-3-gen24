@@ -1,10 +1,8 @@
-import React from 'react'
 import LocationInfo from './LocationInfo'
 import ResidentCard from './ResidentCard'
 import './styles/mainContent.css'
 
 const MainContent = ({ location }) => {
-  console.log(location)
   return (
     <>
     <LocationInfo location={location}/>
